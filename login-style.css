@@ -1,0 +1,50 @@
+body{
+    background-color: gray;
+    height: 100%;
+    margin: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.first-container{
+    border: 1px solid rgb(255, 0, 179);
+    width: 50%;
+}
+
+.second-container{
+    border: 1px solid rgb(33, 6, 24);
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+    /* Centra la imagen dentro del formulario */
+    align-self: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(38, 4, 47);
+    padding: 20px;
+    gap: 10px;
+    width: 400px;
+    height: 600px;
+    justify-content: center;
+}
+
+@media (max-width: 780px){
+    .first-container{
+        display: none;
+    }
+}
